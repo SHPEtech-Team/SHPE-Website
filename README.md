@@ -18,9 +18,9 @@
 ## Project Description
  
 Importance of the Website
- > **Increase Visibility** - This could help us get recognized by students to join SHPE and become a part of our familia
- > **Sponsors** - Money for: SHPE Nationals, General meetings, Workshops, Merch!!
- > **Professionalism** - Maintaining a website keeps our chapter’s image  professional and easy-to-find.
+ > * **Increase Visibility** - This could help us get recognized by students to join SHPE and become a part of our familia
+ > * **Sponsors** - Money for: SHPE Nationals, General meetings, Workshops, Merch!!
+ > * **Professionalism** - Maintaining a website keeps our chapter’s image  professional and easy-to-find.
 
 Technologies
  >Front-End
@@ -41,10 +41,10 @@ KanBan Board
 
 Workflow
  > We will be using a feature branch workflow. The steps are as follows:
- > * 1. Create Feature Branch
- > * 2. Upload to GitHub
- > * 3. Create Pull Request
- > * 4. Merge Feature Branch
+ > 1. Create Feature Branch
+ > 2. Upload to GitHub
+ > 3. Create Pull Request
+ > 4. Merge Feature Branch
 
 Teams
  > We will add you to a team to work on certain feature of the website. Make sure to communicate and document all your work with your teammates :smile:
