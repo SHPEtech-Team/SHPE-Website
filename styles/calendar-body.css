@@ -1,0 +1,9 @@
+.calendar-body {
+  margin-top: 80px;
+  border-width: 5px;
+  border-color: black;
+  border-style: solid;
+  height: 100vh;
+  margin-left: 300px;
+  margin-right: 300px;
+}

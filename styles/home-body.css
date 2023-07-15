@@ -1,0 +1,20 @@
+.home-body {
+  margin-top: 80px;
+}
+.group-photo {
+  margin-left: 300px;
+  margin-right: 300px;
+  border-width: 5px;
+  border-color: black;
+  border-style: solid;
+  height: 100vh;
+}
+.announcements {
+  border-width: 5px;
+  border-color: black;
+  border-style: solid;
+  margin-top: 20px;
+  margin-left: 300px;
+  margin-right: 300px;
+  height: 500px;
+}
