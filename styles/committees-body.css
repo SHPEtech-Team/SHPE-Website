@@ -1,0 +1,29 @@
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 80px;
+  margin-left: 200px;
+  margin-right: 200px;
+  border-width: 5px;
+  border-color: black;
+  border-style: solid;
+  height: 50px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.committees {
+  cursor: pointer;
+}
+
+.committee-info {
+  border-width: 5px;
+  border-color: black;
+  border-style: solid;
+  height: 800px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 300px;
+  margin-right: 300px;
+}

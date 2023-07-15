@@ -1,0 +1,11 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.contact-us {
+  background-color: black;
+  color: white;
+  height: 100px;
+  margin-top: 20px;
+}
