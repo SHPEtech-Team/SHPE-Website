@@ -5,8 +5,59 @@
 }
 
 .contact-us {
-  background-color: black;
+  background-color: #72a9be;
   color: white;
   height: 100px;
   margin-top: 20px;
+}
+
+.top-footer {
+  display: flex;
+  justify-content: center;
+  color: black;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.bottom-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.social-icons {
+  height: 40px;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.insta, .discord, .linkedin {
+  position: relative;
+}
+
+.insta .tooltip,
+.discord .tooltip, 
+.linkedin .tooltip {
+  position: absolute;
+  background-color: gray;
+  color: white;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 8px;
+  padding-right: 8px;
+  border-radius: 2px;
+  font-size: 12px;
+  left: 40px;
+  bottom: -15px;
+  opacity: 0;
+  transition: opacity 0.15s;
+  pointer-events: none;
+  white-space: nowrap;
+}
+
+.insta:hover .tooltip,
+.discord:hover .tooltip,
+.linkedin:hover .tooltip {
+  transition: ease-in 0.5s;
+  opacity: 1;
 }
