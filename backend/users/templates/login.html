@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SHPE Sign In</title>
+</head>
+<body>
+  {% load socialaccount %}
+  <h2>SHPE Login</h2>
+  <a href="{% provider_login_url 'google' %}?next=/">Login with Google</a>
+
+  {% if user.is_authenticated %}
+    <p>you are signed in as {{user.username}}</p>
+    <a href="logout">Logout</a>
+  {% endif %}
+
+  <p><a href="http://127.0.0.1:5500/pages/home.html">Return to Home page</a></p>
+</body>
+</html>
