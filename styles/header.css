@@ -1,5 +1,5 @@
 .header {
-  height: 60px;
+  height: 70px;
   background-color: white;
   display: flex;
   flex-direction: row;
@@ -20,13 +20,13 @@
 }
 
 .logo {
-  height: 50px;
+  height: 30px;
   padding-left: 10px;
   cursor: pointer;
 }
 
 .logo:hover {
-  height: 52px;
+  height: 31px;
   opacity: 0.75;
   transition: all 0.3s ease;
 }
@@ -43,16 +43,20 @@
   cursor: pointer;
   padding: 5px;
   color: #001f5b;
-  font-size: 20px;
+  font-size: 15px;
   text-decoration: none;
   padding: 0 1rem;
-  /* text-shadow: 1px 1px 1px #001f5b; */
 }
 
 .header-items:hover {
   color: #0070c0;
   transition: all 0.3s ease;
-  font-size: 21px;
+  font-size: 16px;
+}
+
+.indicator {
+  text-decoration: #72A9BE overline underline;
+  text-decoration-thickness: 2px;
 }
 
 #button {
@@ -67,7 +71,7 @@
   cursor: pointer;
   padding: 5px;
   color: white;
-  font-size: 20px;
+  font-size: 15px;
   text-decoration: none;
   padding: 4px 1rem;
   margin-left: 0.5rem;
@@ -75,7 +79,7 @@
 }
 
 #button:hover {
-  font-size: 21px;
+  font-size: 16px;
   border-width: 3px;
   opacity: 0.75;
 }

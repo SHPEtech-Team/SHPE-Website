@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,700&display=swap");
+
+.header {
+  height: 70px;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  box-shadow: 0px 2px 5px black;
+}
+
+.left-side {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 200px
+}
+
+.shpe-logo {
+  height: 30px;
+  padding-left: 10px;
+  cursor: pointer;
+}
+
+.shpe-logo:hover {
+  height: 31px;
+  opacity: 0.75;
+  transition: all 0.3s ease;
+}
+
+.right-side {
+  flex: 0.25;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 15px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Roboto, Arial;
+}
