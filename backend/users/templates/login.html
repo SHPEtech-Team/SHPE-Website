@@ -1,20 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SHPE Sign In</title>
-</head>
-<body>
-  {% load socialaccount %}
-  <h2>SHPE Login</h2>
-  <a href="{% provider_login_url 'google' %}?next=/">Login with Google</a>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHPE Sign In</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'login-body.css' %}">
+    <link rel="stylesheet" href="{% static 'login-header.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    {% load socialaccount %}
+    {% if user.is_authenticated %}
+      <nav class="header">
+        <a class="left-side" href="http://127.0.0.1:5500/pages/home.html">
+          <img class="shpe-logo" src="{% static 'img/SHPE_logo_horiz_UC Riverside_CMYK.png' %}">
+        </a>
+        <div class="right-side">
+          <div>event history</div>
+          <div>hello, {{user.username}}</div>
+          <a href="logout">Logout</a>
+        </div>
+          
+      </nav>
+    
+    {% else %}
+      <nav class="header">
+        <a class="left-side" href="http://127.0.0.1:5500/pages/home.html">
+          <img class="shpe-logo" src="{% static 'img/SHPE_logo_horiz_UC Riverside_CMYK.png' %}">
+        </a>
+      </nav>
 
-  {% if user.is_authenticated %}
-    <p>you are signed in as {{user.username}}</p>
-    <a href="logout">Logout</a>
-  {% endif %}
+      <div class="login-page">
+        <div class="login-title">Log in</div>
+        <div class="description">
+          Sign in using your UCR email
+        </div>
+        <a href="{% provider_login_url 'google' %}?next=/" class="google-button">
+          <img src="{% static 'img/google-sign-in.png' %}">
+        </a>
+      </div>
+    {% endif %}
 
-  <p><a href="http://127.0.0.1:5500/pages/home.html">Return to Home page</a></p>
-</body>
+    <div>
+      <a href="http://127.0.0.1:5500/pages/home.html" class="return-home"><i class="arrow left"></i> Return to Home page</a>
+    </div>
+  </body>
 </html>

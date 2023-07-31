@@ -1,0 +1,71 @@
+.login-page {
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 40%);
+
+  height: 500px;
+  width: 1000px;
+
+  border-style: solid;
+  border-width: 3px;
+  border-radius: 10px;
+}
+
+.login-title {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 60px);
+
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.description {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 130px);
+
+  font-size: 25px;
+  color: gray;
+}
+
+.google-button {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.google-button:hover {
+  opacity: 0.5;
+  transition: ease-in-out 0.15s;
+}
+
+.return-home {
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+
+  background-color: gray;
+  padding: 10px;
+  border-radius: 5px;
+  color: white;
+
+  text-decoration: none;
+}
+
+.return-home:hover {
+  opacity: 0.75;
+}
+
+.arrow {
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+
+.left {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
