@@ -19,7 +19,7 @@
  
 Importance of the Website
  > * **Increase Visibility** - This could help us get recognized by students to join SHPE and become a part of our familia
- > * **Sponsors** - Money for: SHPE Nationals, General meetings, Workshops, Merch!!
+ > * **Sponsors** - Money for: SHPE Nationals, flip-box meetings, Workshops, Merch!!
  > * **Professionalism** - Maintaining a website keeps our chapter’s image  professional and easy-to-find.
 
 Technologies
