@@ -7,15 +7,16 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,700&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="/styles/header.css">
-    <link rel="stylesheet" href="/styles/home-body.css">
-    <link rel="stylesheet" href="/styles/footer.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/home-body.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <script src="js/home.js"></script>
   </head>
   <body>
     <!-- HEADER SECTION // DO NOT CHANGE -->
     <nav class="header">
       <a href="home.html" class="left-side">
-        <img class="logo" src="/logos/SHPE_logo_horiz_UC Riverside_CMYK.png">
+        <img class="logo" src="logos/SHPE_logo_horiz_UC Riverside_CMYK.png">
       </a>
       <div class="right-side">
         <u class="indicator"><a href="home.html" class="header-items">Home</a></u>
@@ -27,10 +28,51 @@
       </div>
     </nav>
     <!-- END OF HEADER SECTION -->
-
-    <!-- HOME SECTION // EDIT THIS SECTION -->
+  
+     <!-- HOME SECTION // EDIT THIS SECTION -->
     <main class="home-body">
-      <div class="group-photo">Group Photo</div>
+      <div class="group-photo">Welcome
+        <div class="group-slideshow-container">
+
+          <!-- Full-width images with number and caption text -->
+          <div class="mySlides fade">
+            <div class="numbertext">1 / 3</div>
+            <img src="images/home-images/Group1.jpg" style="width:100%">
+            <div class="text">Caption Text</div>
+          </div>
+        
+          <div class="mySlides fade">
+            <div class="numbertext">2 / 3</div>
+            <img src="images/home-images/Group2.jpg" style="width:100%">
+            <div class="text">Caption Two</div>
+          </div>
+        
+          <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <img src="images/home-images/Group3.jpg" style="width:100%">
+            <div class="text">Caption Three</div>
+          </div>
+        
+          <!-- Next and previous buttons -->
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+
+
+      </div>
+      
+      <!-- Slideshow container -->
+
+
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+
       <div class="announcements">Announcements</div>
     </main>
     <!-- END OF HOME SECTION -->
@@ -40,15 +82,15 @@
       <div class="top-footer">Society of Hispanic Professional Engineers &#183 2023-2024</div>
       <div class="bottom-footer">
         <a class="insta" href="https://www.instagram.com/shpeucr/" target="_blank">
-          <img class="social-icons" src="/logos/instagram.png">
+          <img class="social-icons" src="logos/instagram.png">
           <div class="tooltip">Instagram</div>
         </a>
         <a class="discord" href="https://discord.gg/Bw9GvphJT" target="_blank">
-          <img class="social-icons" src="/logos/discord.png">
+          <img class="social-icons" src="logos/discord.png">
           <div class="tooltip">Discord</div>
         </a>
         <a class="linkedin" href="https://www.linkedin.com/in/shpe-at-ucr-99051a75/" target="_blank">
-          <img class="social-icons" src="/logos/linkedin.png">
+          <img class="social-icons" src="logos/linkedin.png">
           <div class="tooltip">LinkedIn</div>
         </a>
       </div>
