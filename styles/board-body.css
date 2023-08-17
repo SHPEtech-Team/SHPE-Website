@@ -68,9 +68,14 @@
   border-radius: 10px;
 }
 
-.career-goal, .fun-fact {
+.year-major, .career-goal, .fun-fact {
   margin-left: 10px;
   margin-right: 10px;
+}
+
+.year-major {
+  margin-top: 5%;
+  font-size: 20px;
 }
 
 .career-goal {
@@ -108,9 +113,10 @@
 }
 
 .board-links {
-  display: inline-block;
+  display: inline;
   margin-top: 5px;
-  margin-left: 73%;
+  margin-left: auto;
+  margin-right: 7px;
 }
 
 .links {
@@ -166,11 +172,17 @@
 .flip-box-back {
   border-radius: 8px;
   background-color: whitesmoke;
-  color: #fd652f;
+  color: black;
   transform: rotateY(-180deg);
 }
 
-@media (max-width: 750px) {
+@media (max-width: 500px) {
+  .board-body {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 501px) and (max-width: 751px) {
   .board-body {
     grid-template-columns: 1fr 1fr;
   }
