@@ -71,6 +71,7 @@
 .year-major, .career-goal, .fun-fact {
   margin-left: 10px;
   margin-right: 10px;
+  font-size: 1vw;
 }
 
 .year-major {
@@ -79,7 +80,7 @@
 }
 
 .career-goal {
-  margin-top: 20%;
+  margin-top: 10%;
 }
 
 .fun-fact {
@@ -180,25 +181,21 @@
   .board-body {
     grid-template-columns: 1fr;
   }
+
+  .career-goal, .fun-fact {
+    font-size: 15px;
+  }
 }
 
 @media (min-width: 501px) and (max-width: 751px) {
   .board-body {
     grid-template-columns: 1fr 1fr;
   }
-
-  .career-goal, .fun-fact {
-    font-size: 10px;
-  }
 }
 
 @media (min-width: 751px) and (max-width: 999px) {
   .board-body {
     grid-template-columns: 1fr 1fr 1fr;
-  }
-
-  .career-goal, .fun-fact {
-    font-size: 10px;
   }
 }
 
