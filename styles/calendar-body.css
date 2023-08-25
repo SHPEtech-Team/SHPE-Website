@@ -1,9 +1,51 @@
-.calendar-body {
-  margin-top: 80px;
-  border-width: 5px;
-  border-color: black;
-  border-style: solid;
-  height: 100vh;
-  margin-left: 300px;
-  margin-right: 300px;
+#calendar {
+  margin-top: 15px;
 }
+
+.categories {
+  /* margin-left: 50%;
+  transform: translate(-50%); */
+  margin-top: 130px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  justify-content: space-between;
+
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.category {
+  width: 200px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  color: white;
+  border-radius: 10px;
+  background-color: black;
+  text-align: center;
+}
+
+#gm {
+  background-color: #D33A02;
+}
+
+#prof {
+  background-color: #001F5B;
+}
+
+#outreach {
+  background-color: #FD652F;
+}
+
+#shpetinas {
+  background-color: #0070C0;
+}
+
+#fundraiser {
+  background-color: #8B0000;
+}
+
+#social {
+  background-color:  #72A9BE;
+}
+ 

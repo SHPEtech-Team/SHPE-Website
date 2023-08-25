@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SHPE Sign In</title>
     {% load static %}
+    <link rel="icon" href="{% static 'img/regular shpe.png' %}">
     <link rel="stylesheet" href="{% static 'login-body.css' %}">
     <link rel="stylesheet" href="{% static 'login-header.css' %}">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,9 +19,8 @@
         <a class="left-side" href="http://127.0.0.1:5500/pages/home.html">
           <img class="shpe-logo" src="{% static 'img/SHPE_logo_horiz_UC Riverside_CMYK.png' %}">
         </a>
-        <div class="right-side">
-          <div>event history</div>
-          <div>hello, {{user.username}}</div>
+        <div>
+          <div class="intro">hello, {{user.username}}</div>
           <a href="logout">Logout</a>
         </div>
           
