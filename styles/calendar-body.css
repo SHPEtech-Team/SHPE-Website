@@ -1,20 +1,22 @@
 .categories {
-  /* margin-left: 50%;
-  transform: translate(-50%); */
-  margin-top: 130px;
   display: flex;
   flex-direction: row;
   justify-content: center;
   justify-content: space-between;
 
-  padding-left: 10%;
-  padding-right: 10%;
+  position: absolute;
+  top: 180px;
+
+  margin-left: 50%;
+  transform: translate(-50%);
 }
 
 .category {
-  width: 200px;
+  width: 130px;
   padding-top: 2px;
   padding-bottom: 2px;
+  margin-left: 5px;
+  margin-right: 5px;
   color: white;
   border-radius: 10px;
   background-color: black;
@@ -51,6 +53,23 @@
 }
 
 #calendar {
-  margin-top: 15px;
+  margin-top: 130px;
   height: 100%;
+}
+
+.fc-toolbar-chunk {
+  margin-bottom: 15px;
+}
+
+.fc-event-time {
+  font-weight: lighter !important;
+  text-decoration: underline;
+}
+
+.fc-event-title {
+  font-weight: 500;
+}
+
+.fc-daygrid-day-number {
+  font-weight: 500;
 }
