@@ -24,6 +24,7 @@
           googleCalendarApiKey: 'AIzaSyDAQIw5JtCyjWZH-8kQL_ti3XBVp_UWcOA',
 
           height: 800,
+          dayMaxEvents: true,
 
           headerToolbar: {
             left: 'prev',
@@ -36,6 +37,7 @@
               googleCalendarId: 'c_97d377411e90c628d36acebad9ad6bca3a2e193eda7763ce2b6d645fab6b36a0@group.calendar.google.com',
               color: '#D33A02',
               display: 'block',
+              timeZone: 'local',
             },
             {
               googleCalendarId: 'c_f5ae8c5397dae724849dd9750de837039a484254b8049c8017f050ef7f7b1d35@group.calendar.google.com',
@@ -63,9 +65,52 @@
               display: 'block',
             }
           ],
-          eventClick: function(event) {
-            event.jsEvent.cancelBubble = true;
-            event.jsEvent.preventDefault();
+
+          eventClick: function(info) {
+            info.jsEvent.cancelBubble = true;
+            info.jsEvent.preventDefault();
+
+            var eventObj = info.event;
+
+            var str1 = calendar.formatDate(eventObj.start, {
+              month: 'long',
+              year: 'numeric',
+              day: 'numeric',
+              weekday: 'long',
+            });
+
+            var str2 = calendar.formatDate(eventObj.end, {
+              month: 'long',
+              year: 'numeric',
+              day: 'numeric',
+              weekday: 'long',
+            });
+
+            var num1 = calendar.formatDate(eventObj.start, {
+              hour: 'numeric',
+              minute: 'numeric',
+            });
+
+            var num2 = calendar.formatDate(eventObj.end, {
+              hour: 'numeric',
+              minute: 'numeric',
+            });
+            
+            if (eventObj.allDay) {
+              alert(
+                'Event: ' + eventObj.title +
+                '\n\nDate: ' + str1 + ' to ' + str2 +
+                '\n\nLocation: ' + eventObj.extendedProps.location +
+                '\n\nDescription: ' + eventObj.extendedProps.description);
+            }
+            else {
+              alert(
+                'Event: ' + eventObj.title +
+                '\n\nDate: ' + str1 +
+                '\n\nTime: ' + num1 + ' to ' + num2 +
+                '\n\nLocation: ' + eventObj.extendedProps.location +
+                '\n\nDescription: ' + eventObj.extendedProps.description);
+            }
           },
         });
         calendar.render();
