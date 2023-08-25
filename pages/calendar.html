@@ -21,7 +21,9 @@
         var calendarEl = document.getElementById('calendar');
         var calendar = new FullCalendar.Calendar(calendarEl, {
           initialView: 'dayGridMonth',
-          googleCalendarApiKey: 'AIzaSyA9hkWMNbhi91F_vaPyo5ynl4Osqig-hNw',
+          googleCalendarApiKey: 'AIzaSyDAQIw5JtCyjWZH-8kQL_ti3XBVp_UWcOA',
+
+          height: 800,
 
           headerToolbar: {
             left: 'prev',
@@ -34,7 +36,6 @@
               googleCalendarId: 'c_97d377411e90c628d36acebad9ad6bca3a2e193eda7763ce2b6d645fab6b36a0@group.calendar.google.com',
               color: '#D33A02',
               display: 'block',
-              
             },
             {
               googleCalendarId: 'c_f5ae8c5397dae724849dd9750de837039a484254b8049c8017f050ef7f7b1d35@group.calendar.google.com',
@@ -65,7 +66,7 @@
           eventClick: function(event) {
             event.jsEvent.cancelBubble = true;
             event.jsEvent.preventDefault();
-          }
+          },
         });
         calendar.render();
       });
@@ -95,7 +96,9 @@
       <div id="fundraiser" class="category">Fundraiser</div>
       <div id="social" class="category">Social</div>
     </div>
-    <div id='calendar'></div>
+    <div class="outer" style="width: 80%;">
+      <div id='calendar'></div>
+    </div>
     <!-- END OF CALENDAR SECTION -->
 
     <!-- FOOTER SECTION // DO NOT CHANGE -->
