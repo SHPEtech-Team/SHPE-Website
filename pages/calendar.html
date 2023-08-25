@@ -21,7 +21,9 @@
         var calendarEl = document.getElementById('calendar');
         var calendar = new FullCalendar.Calendar(calendarEl, {
           initialView: 'dayGridMonth',
-          googleCalendarApiKey: 'AIzaSyA9hkWMNbhi91F_vaPyo5ynl4Osqig-hNw',
+          googleCalendarApiKey: 'AIzaSyDAQIw5JtCyjWZH-8kQL_ti3XBVp_UWcOA',
+
+          height: 800,
 
           headerToolbar: {
             left: 'prev',
@@ -65,7 +67,7 @@
           eventClick: function(event) {
             event.jsEvent.cancelBubble = true;
             event.jsEvent.preventDefault();
-          }
+          },
         });
         calendar.render();
       });
@@ -95,7 +97,9 @@
       <div id="fundraiser" class="category">Fundraiser</div>
       <div id="social" class="category">Social</div>
     </div>
-    <div id='calendar'></div>
+    <div class="outer" style="width: 80%;">
+      <div id='calendar'></div>
+    </div>
     <!-- END OF CALENDAR SECTION -->
 
     <!-- FOOTER SECTION // DO NOT CHANGE -->

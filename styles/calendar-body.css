@@ -1,7 +1,3 @@
-#calendar {
-  margin-top: 15px;
-}
-
 .categories {
   /* margin-left: 50%;
   transform: translate(-50%); */
@@ -49,3 +45,12 @@
   background-color:  #72A9BE;
 }
  
+.outer {
+  margin-left: 50%;
+  transform: translate(-50%);
+}
+
+#calendar {
+  margin-top: 15px;
+  height: 100%;
+}
