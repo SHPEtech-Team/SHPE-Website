@@ -33,14 +33,6 @@
   transition: all 0.15s ease;
 }
 
-.right-side {
-  flex: 0.25;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-right: 15px;
-}
-
 body {
   margin: 0;
   padding: 0;
