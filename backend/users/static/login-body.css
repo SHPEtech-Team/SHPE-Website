@@ -41,6 +41,10 @@
   transition: ease-in-out 0.15s;
 }
 
+.event-reg {
+  margin-top: 135px;
+}
+
 .return-home {
   position: absolute;
   left: 20px;
