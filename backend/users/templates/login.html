@@ -19,13 +19,18 @@
         <a class="left-side" href="http://127.0.0.1:5500/pages/home.html">
           <img class="shpe-logo" src="{% static 'img/SHPE_logo_horiz_UC Riverside_CMYK.png' %}">
         </a>
-        <div>
+        <div class="right-side">
           <div class="intro">hello, {{user.username}}</div>
           <a href="logout">Logout</a>
         </div>
-          
       </nav>
-    
+
+      <div class="event-reg">
+        <div id="ff-compose"></div>
+        <script async defer src="https://formfacade.com/include/107923411045121755614/form/1FAIpQLSdSwp80_orhpZWKX3i2zd10d_mIIIEGg3C3MjdQ46S0vDJsFg/classic.js?div=ff-compose"></script>
+      </div>
+
+
     {% else %}
       <nav class="header">
         <a class="left-side" href="http://127.0.0.1:5500/pages/home.html">

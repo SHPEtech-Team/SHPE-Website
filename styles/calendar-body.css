@@ -73,3 +73,9 @@
 .fc-daygrid-day-number {
   font-weight: 500;
 }
+
+.fc-button {
+  background-color: #FD652F !important;
+  border-radius: 15px !important;
+  border: none !important;
+}
