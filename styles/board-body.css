@@ -33,7 +33,7 @@
 
 .board-position {
   border-width: 2px;
-  border-color: gray;
+  border-color: rgb(198, 198, 198);
   border-style: solid;
 
   height: 550px;

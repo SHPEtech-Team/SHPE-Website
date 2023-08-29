@@ -1,5 +1,5 @@
 .home-body {
-  margin-top: 80px;
+  margin-top: 130px;
 }
 .group-photo {
   margin-left: 300px;
@@ -9,12 +9,46 @@
   border-style: solid;
   height: 100vh;
 }
-.announcements {
-  border-width: 5px;
-  border-color: black;
-  border-style: solid;
-  margin-top: 20px;
-  margin-left: 300px;
-  margin-right: 300px;
-  height: 500px;
+ 
+.outer {
+  margin-left: 50%;
+  transform: translate(-50%);
+}
+
+#calendar {
+  margin-top: 130px;
+  height: 100%;
+}
+
+.fc-toolbar-chunk {
+  margin-bottom: 5px;
+}
+
+.fc-event-time {
+  font-weight: lighter !important;
+  text-decoration: underline;
+}
+
+.fc-event-title {
+  font-weight: 500;
+}
+
+.fc-daygrid-day-number {
+  font-weight: 500;
+  text-decoration: none;
+  color: black;
+}
+
+.fc-button {
+  background-color: #FD652F !important;
+  border-radius: 15px !important;
+  border: none !important;
+}
+
+.modal {
+  z-index: 9999;
+}
+
+.top-space {
+  margin-top: 10px;
 }

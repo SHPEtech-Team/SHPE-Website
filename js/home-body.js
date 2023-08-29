@@ -1,10 +1,11 @@
+
 document.addEventListener('DOMContentLoaded', function() {
   var calendarEl = document.getElementById('calendar');
   var calendar = new FullCalendar.Calendar(calendarEl, {
-    initialView: 'dayGridMonth',
+    initialView: 'listWeek',
     googleCalendarApiKey: 'AIzaSyDAQIw5JtCyjWZH-8kQL_ti3XBVp_UWcOA',
 
-    height: 800,
+    height: 400,
     dayMaxEvents: true,
 
     headerToolbar: {

@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset='utf-8' />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/index.global.min.js'></script>
+    <script src='/google-calendar/index.global.js'></script>
+
     <title>SHPE at UCR</title>
     <link rel="icon" href="/logos/regular shpe.png">
 
@@ -11,6 +16,8 @@
     <link rel="stylesheet" href="/styles/header.css">
     <link rel="stylesheet" href="/styles/home-body.css">
     <link rel="stylesheet" href="/styles/footer.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
   </head>
   <body>
     <!-- HEADER SECTION // DO NOT CHANGE -->
@@ -32,8 +39,32 @@
     <!-- HOME SECTION // EDIT THIS SECTION -->
     <main class="home-body">
       <div class="group-photo">Group Photo</div>
-      <div class="announcements">Announcements</div>
     </main>
+    <div class="outer" style="width: 60%;">
+      <div id='calendar'></div>
+    </div>
+
+    <script src="/js/home-body.js"></script>
+    
+    <div id="fullCalModal" class="modal fade" tabindex="-1" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title"></h4>
+          </div>
+          <div class="modal-body">
+            <div class="event-date"></div>
+            <div class="event-time top-space"></div>
+            <div class="event-location top-space"></div>
+            <div class="event-description top-space"></div>
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
     <!-- END OF HOME SECTION -->
 
     <!-- FOOTER SECTION // DO NOT CHANGE -->
