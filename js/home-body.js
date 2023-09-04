@@ -10,8 +10,13 @@ document.addEventListener('DOMContentLoaded', function() {
 
     headerToolbar: {
       left: 'prev',
-      center: 'title',
+      // center: 'title',
       right: 'next',
+    },
+
+    titleFormat: {
+      month: 'short',
+      day: 'numeric',
     },
 
     eventClick: function(info) {
