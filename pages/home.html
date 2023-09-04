@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset='utf-8' />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/index.global.min.js'></script>
+    <script src='/google-calendar/index.global.js'></script>
+
     <title>SHPE at UCR</title>
     <link rel="icon" href="/logos/regular shpe.png">
 
@@ -11,6 +16,8 @@
     <link rel="stylesheet" href="/styles/header.css">
     <link rel="stylesheet" href="/styles/home-body.css">
     <link rel="stylesheet" href="/styles/footer.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
   </head>
   <body>
     <!-- HEADER SECTION // DO NOT CHANGE -->
@@ -18,8 +25,13 @@
       <a href="home.html" class="left-side">
         <img class="logo" src="/logos/SHPE_logo_horiz_UC Riverside_CMYK.png">
       </a>
+      <div class="navbar_toggle" id="mobile-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
       <div class="right-side">
-        <u class="indicator"><a href="home.html" class="header-items">Home</a></u>
+        <a href="home.html" class="header-items">Home</a>
         <a href="about.html" class="header-items">About</a>
         <a href="board.html" class="header-items">Board</a>
         <a href="committees.html" class="header-items">Committees</a>
@@ -30,10 +42,41 @@
     <!-- END OF HEADER SECTION -->
 
     <!-- HOME SECTION // EDIT THIS SECTION -->
-    <main class="home-body">
-      <div class="group-photo">Group Photo</div>
-      <div class="announcements">Announcements</div>
-    </main>
+    <div class="ucr-container">
+      <img class="ucr-pic" src="/logos/ucr bell.jpg">
+      <div class="shpe-text">
+        <div class="shpe-name">Society of Hispanic Professional Engineers</div>
+        <div class="ucr-name">University of California, Riverside</div2>
+      </div>
+    </div>
+
+    <div class="cal-title">Events This Week</div>
+
+    <div class="outer" style="width: 60%;">
+      <div id='calendar'></div>
+    </div>
+
+    <script src="/js/home-body.js"></script>
+    
+    <div id="fullCalModal" class="modal fade" tabindex="-1" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title"></h4>
+          </div>
+          <div class="modal-body">
+            <div class="event-date"></div>
+            <div class="event-time top-space"></div>
+            <div class="event-location top-space"></div>
+            <div class="event-description top-space"></div>
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
     <!-- END OF HOME SECTION -->
 
     <!-- FOOTER SECTION // DO NOT CHANGE -->
@@ -55,5 +98,6 @@
       </div>
     </footer>
     <!-- END OF FOOTER SECTION -->
+    <script src="/js/header.js"></script>
   </body>
 </html>

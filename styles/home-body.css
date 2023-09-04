@@ -1,6 +1,37 @@
-.home-body {
-  margin-top: 80px;
+.ucr-pic {
+  width: 100%;
+  height: 100%;
+  opacity: 0.85;
 }
+
+.ucr-container {
+  position: relative;
+}
+
+.shpe-text {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.shpe-name, .ucr-name {
+  color: white;
+  text-shadow: 3px 3px black;
+}
+
+.shpe-name {
+  font-size: 2.5vw;
+}
+.ucr-name {
+  font-size: 1.6vw;
+}
+
 .group-photo {
   margin-left: 300px;
   margin-right: 300px;
@@ -9,12 +40,55 @@
   border-style: solid;
   height: 100vh;
 }
-.announcements {
-  border-width: 5px;
-  border-color: black;
-  border-style: solid;
-  margin-top: 20px;
-  margin-left: 300px;
-  margin-right: 300px;
-  height: 500px;
+ 
+.outer {
+  margin-left: 50%;
+  transform: translate(-50%);
+}
+
+.cal-title {
+  position: absolute;
+  bottom: 525px;
+  left: 50%;
+  transform: translate(-50%);
+
+  font-size: 30px;
+}
+
+#calendar {
+  margin-top: 130px;
+  height: 100%;
+}
+
+.fc-toolbar-chunk {
+  margin-bottom: 5px;
+}
+
+.fc-event-time {
+  font-weight: lighter !important;
+  text-decoration: underline;
+}
+
+.fc-event-title {
+  font-weight: 500;
+}
+
+.fc-daygrid-day-number {
+  font-weight: 500;
+  text-decoration: none;
+  color: black;
+}
+
+.fc-button {
+  background-color: #FD652F !important;
+  border-radius: 15px !important;
+  border: none !important;
+}
+
+.modal {
+  z-index: 9999;
+}
+
+.top-space {
+  margin-top: 10px;
 }
