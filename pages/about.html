@@ -28,6 +28,7 @@
     <!-- END OF HEADER SECTION -->
 
     <!-- ABOUT SECTION // EDIT THIS SECTION -->
+    
     <div class="about-head">
       <h1>About SHPE</h1>
     </div>
@@ -67,27 +68,7 @@
     </div>
 
     <!--Slide js script-->
-    <script>
-      const slider = document.querySelector('[data-slider]');
-      const prevButton = document.querySelector('[data-prev]');
-      const nextButton = document.querySelector('[data-next]');
-      const itemWidth = document.querySelector('[data-slide]').clientWidth;
-      const numOfItems = 5;
-
-      function scrollToNextItem(){
-        slider.scrollBy({left: itemWidth, top: 0, behavior: 'smooth'});
-      }
-
-      function scrollToPrevItem(){
-        slider.scrollBy({left: -itemWidth, top: 0, behavior: 'smooth'});
-        
-      }
-      
-      nextButton.addEventListener('click', scrollToNextItem);
-      prevButton.addEventListener('click', scrollToPrevItem);
-      
-  </script>
-
+    <script src="/js/about-page-slider.js"></script>
     <div class="category">
       <div>Professional Development</div>
       <div>Power Brunch</div>
