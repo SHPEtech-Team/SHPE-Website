@@ -112,8 +112,8 @@
     top: 100%;
     opacity: 1;
     transition: all 0.5s ease;
-    z-index: 99;
-    height: 42vh;
+    z-index: 1;
+    height: 59vh;
     font-size: 2rem;
     display: flex;
     justify-content: center;
@@ -130,7 +130,7 @@
 
   .header-items {
     text-align: center;
-    padding: 2.5rem;
+    padding: 2rem;
     width: 100%;
     text-decoration: none;
   }
