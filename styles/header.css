@@ -39,10 +39,11 @@
 
 #short-logo {
   opacity: 0;
+  height: 40px;
 }
 
 .right-side {
-  flex: 0.5;
+  flex: 0.4;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -108,7 +109,7 @@
   opacity: 0.75;
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 708px) {
   .header {
     display: flex;
     justify-content: space-between;
@@ -125,6 +126,7 @@
   
   #short-logo {
     opacity: 1;
+    margin-left: 15px;
   }
 
   .right-side {
@@ -162,6 +164,10 @@
     margin: 5px auto;
     transition: all 0.3s ease-in-out;
     background-color: black;
+  }
+
+  .navbar_toggle {
+    margin-top: 7px;
   }
 
   .header-items {
