@@ -46,7 +46,7 @@
 }
 
 .return-home {
-  position: absolute;
+  position: fixed;
   left: 20px;
   bottom: 20px;
 
@@ -73,3 +73,17 @@
   transform: rotate(135deg);
   -webkit-transform: rotate(135deg);
 }
+
+.slides-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-left: 50%;
+  transform: translate(-50%);
+  margin-top: 50px;
+}
+
+/* .gm-header  {
+  margin-left: 400px;
+} */
