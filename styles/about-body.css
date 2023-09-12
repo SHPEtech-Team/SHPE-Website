@@ -1,41 +1,24 @@
-/*
-.about-body {
-  margin-top: 80px;
-  border-width: 5px;
-  border-color: black;
-  border-style: solid;
-  height: 100vh;
-  margin-left: 300px;
-  margin-right: 300px;
-}
-*/
-
 .about-body {
   display: flex;
-  padding: 20px;
-  border-width: 5px;
-  border-color: black;
-  border-style: solid;
-  height: 25vh;
+  padding-left: 15%;
+  padding-right: 15%;
+
   overflow: hidden;
+  margin-top: 40px;
+}
+
+#top-page {
+  margin-bottom: 40px;
 }
 
 .flex-container{
-  border-width: 5px;
-  border-color: black;
-  border-style: solid;
   flex: 1;
-  font-size: auto;
-
+  font-size: 20px;
 }
 
 .flex-container:first-child{
-  border-width: 5px;
-  border-color: black;
-  border-style: solid;
   margin-right: 20%;
   font-size: auto;
-
 }
 
 #about-body-header{
@@ -48,12 +31,9 @@
 }
 
 .about-head {
-  margin-top: 80px;
-  border-width: 5px;
-  border-color: black;
-  border-style: solid;
-  height: 50vh;
+  margin-top: 130px;
   display: flex;
+  justify-content: center;
 }
 
 .about-head h1{
@@ -71,6 +51,38 @@
   height: 100vh;
   margin-left: 300px;
   margin-right: 300px;
+}
+
+.divider {
+  margin-top: 10px;
+  border: 2px solid #fd652f;
+  opacity: 0.5;
+  width: 90%;
+  margin-left: 5%;
+}
+
+.horizontal-container {
+  display: flex;
+  flex-direction: row;
+  padding-left: 15%;
+  padding-right: 15%;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.about-title {
+  margin-left: 15%;
+}
+
+.description {
+  width: 500px;
+  margin-top: 10px;
+}
+
+.right-image {
+  height: 300px;
+  width: 500px;
+  border-style: solid;
 }
 
 .slider-container{
@@ -138,4 +150,33 @@
 .slider-button.prev{
   transform: scale(-1);
   left: 1rem;
+}
+
+.accordian-container {
+  width: 70%;
+  margin-left: 50%;
+  transform: translate(-50%);
+}
+
+.initiative-title {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.initiative-image {
+  height: 300px;
+  width: 400px;
+  object-fit: cover;
+}
+
+.vert-description {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  column-gap: 100px;
+  padding-left: 10%;
+  padding-right: 10%;
+  margin-bottom: 30px;
 }
