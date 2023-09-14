@@ -166,7 +166,7 @@
 }
 
 .initiative-image {
-  height: 300px;
+  height: 15vw;
   width: 400px;
   object-fit: cover;
   border-radius: 10px;
@@ -190,10 +190,5 @@
   display: flex;
   margin-left: 50%;
   transform: translate(-50%);
-}
-
-.carousel-item img {
-  /* width: auto !important; */
-  height: 20%;
-  max-height: 20%;
+  margin-bottom: 50px;
 }

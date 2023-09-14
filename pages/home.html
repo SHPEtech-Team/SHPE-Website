@@ -46,38 +46,61 @@
     <!-- END OF HEADER SECTION -->
 
     <!-- HOME SECTION // EDIT THIS SECTION -->
-    <div class="ucr-container">
+    <!-- <div class="ucr-container">
       <img class="ucr-pic" src="/logos/ucr bell.jpg">
       <div class="shpe-text">
         <div class="shpe-name">Society of Hispanic Professional Engineers</div>
-        <div class="ucr-name">University of California, Riverside</div2>
+        <div class="ucr-name">University of California, Riverside</div>
+      </div>
+    </div> -->
+    <div class="fixed-bg">
+      <div class="text-container">
+        <div class="animation-div" id="shpe-name">Society of Hispanic Professional Engineers</div>
+        <hr class="divid">
+        <div class="animation-div" id="ucr-name">University of California, Riverside</div>
       </div>
     </div>
 
-    <div class="cal-title">Events This Week</div>
+    <script>
+      window.onscroll = function() {
+        if ($(this).scrollTop() > 50) {
+          $('.animation-div').fadeOut("fast");
+          $('.divid').fadeOut("fast");
+        }
+        else {
+          $('.animation-div').fadeIn();
+          $('.divid').fadeIn();
+        }
+      }
+    </script>
 
-    <div class="outer" style="width: 60%;">
-      <div id='calendar'></div>
+    <div class="about-container">
+      <div class="cal-title"><h2>Events This Week</h2></div>
+
+      <div class="outer" style="width: 60%;">
+        <div id='calendar'></div>
+      </div>
+
+      <script src="/js/home-body.js"></script>
+      
+      <div id="fullCalModal" class="modal fade" tabindex="-1" role="dialog">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title"></h4>
+            </div>
+            <div class="modal-body">
+              <div class="event-date"></div>
+              <div class="event-time top-space"></div>
+              <div class="event-location top-space"></div>
+              <div class="event-description top-space"></div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-
-    <script src="/js/home-body.js"></script>
     
-    <div id="fullCalModal" class="modal fade" tabindex="-1" role="dialog">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            <h4 class="modal-title"></h4>
-          </div>
-          <div class="modal-body">
-            <div class="event-date"></div>
-            <div class="event-time top-space"></div>
-            <div class="event-location top-space"></div>
-            <div class="event-description top-space"></div>
-          </div>
-        </div><!-- /.modal-content -->
-      </div><!-- /.modal-dialog -->
-    </div><!-- /.modal -->
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
