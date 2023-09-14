@@ -68,6 +68,10 @@
   position: relative;
 }
 
+#special {
+  top: 240% !important;
+}
+
 .indicator {
   position: absolute;
   height: 2px;

@@ -7,11 +7,6 @@
   background-size: cover;
 }
 
-/* .about-container {
-  background-color: white;
-  height: 2000px;
-} */
-
 .divid {
   position: absolute;
   top: 46%;
@@ -105,7 +100,6 @@
 
 #calendar {
   margin-top: 5px;
-  height: 100%;
 }
 
 .fc-toolbar-chunk {
@@ -139,4 +133,49 @@
 
 .top-space {
   margin-top: 10px;
+}
+
+.welcome-text {
+  font-size: 40px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  margin-top: 50px;
+  font-weight: 800;
+  margin-bottom: 50px;
+}
+
+.welcome-img {
+  height: 300px;
+  margin-right: 50px;
+}
+
+.welcome-message {
+  margin-top: 20px;
+  text-align: center;
+  width: 100%;
+  font-size: 20px;
+}
+
+.sep {
+  width: 30%;
+  height: 2px;
+  background-color: #FD652F;
+  margin-left: 50%;
+  transform: translate(-50%);
+}
+
+.welcome-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-left: 50%;
+  transform: translate(-50%);
+}
+
+.sponsor-container {
+  width: 40%;
+  margin-left: 50%;
+  transform: translate(-50%);
 }

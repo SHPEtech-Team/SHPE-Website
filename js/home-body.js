@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
     initialView: 'listWeek',
     googleCalendarApiKey: 'AIzaSyDAQIw5JtCyjWZH-8kQL_ti3XBVp_UWcOA',
 
-    height: 400,
+    height: 300,
     dayMaxEvents: true,
 
     headerToolbar: {
