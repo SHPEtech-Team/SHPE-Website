@@ -166,8 +166,7 @@
 }
 
 .initiative-image {
-  height: 15vw;
-  width: 400px;
+  width: 300px;
   object-fit: cover;
   border-radius: 10px;
   border-style: solid;
@@ -185,10 +184,28 @@
   margin-bottom: 30px;
 }
 
+#reverse {
+  flex-direction: row-reverse;
+}
+
 .carousel-container {
   width: 50%;
   display: flex;
   margin-left: 50%;
   transform: translate(-50%);
   margin-bottom: 50px;
+}
+
+@media screen and (max-width: 1000px) {
+  .initiative-image {
+    margin-top: 20px;
+  }
+
+  .horizontal-container {
+    flex-direction: column !important;
+  }
+
+  .vert-description {
+    flex-direction: column !important;
+  }
 }

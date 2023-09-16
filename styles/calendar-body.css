@@ -5,7 +5,7 @@
   row-gap: 5px;
 
   position: absolute;
-  top: 270px;
+  top: 255px;
 
   margin-left: 50%;
   transform: translate(-50%);
@@ -100,7 +100,6 @@
 .title {
   margin-top: 130px;
   text-align: center;
-  font-size: 50px;
   font-weight: bold;
   color: black;
   font-family: Roboto;
