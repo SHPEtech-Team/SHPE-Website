@@ -4,7 +4,7 @@
   justify-content: space-between;
   background-color: #72A9BE;
   align-items: center;
-  margin-top: 80px;
+  margin-top: 120px;
   margin-left: auto;
   margin-right: auto;
   border-width: 5px;
@@ -43,8 +43,8 @@
 }
 
 .committee-border {
-  border-width: 3px;
-  border-color: black;
+  border-width: 2px;
+  border-color: #001F5B;
   border-style: solid;
   height: 400px;
   margin-top: 20px;
@@ -84,6 +84,8 @@
 .committee:hover .committee-info {
   right: 0;
   opacity: 1;
+  text-align: center;
+  padding: 10px;
 }
 
 .logo-overlay {
@@ -106,4 +108,21 @@
 
 .committee-border:hover .logo-overlay {
   left: 26%;
+}
+
+.shpe-body-orange {
+  font-family: 'Pathway Gothic One', Arial;
+  font-size:30px;
+  color: #D33A02;
+}
+
+.shpe-body-blue {
+  font-family: 'Pathway Gothic One', Arial;
+  font-size:30px;
+  color: #001F5B;
+}
+
+.shpe-header {
+  font-family: 'Pathway Gothic One', Arial;
+  font-size:50px;
 }
