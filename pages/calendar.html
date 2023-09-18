@@ -3,10 +3,8 @@
   <head>
     <meta charset='utf-8' />
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
     <script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/index.global.min.js'></script>
     <script src='/google-calendar/index.global.js'></script>
-    <script src="/js/calendar-body.js"></script>
 
     <title>Calendar</title>
     <link rel="icon" href="/logos/regular shpe.png">
@@ -19,62 +17,76 @@
     <link rel="stylesheet" href="/styles/calendar-body.css">
     <link rel="stylesheet" href="/styles/footer.css">
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
   </head>
   <body>
     <!-- HEADER SECTION // DO NOT CHANGE -->
     <nav class="header">
-      <a href="home.html" class="left-side"><img class="logo" src="/logos/SHPE_logo_horiz_UC Riverside_CMYK.png"></a>
+      <a href="home.html" class="left-side">
+        <img id="long-logo" class="logo" src="/logos/SHPE_logo_horiz_UC Riverside_CMYK.png">
+        <img id="short-logo" class="logo" src="/logos/regular shpe.png">
+      </a>
+      <div class="navbar_toggle" id="mobile-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
       <div class="right-side">
         <a href="home.html" class="header-items">Home</a>
         <a href="about.html" class="header-items">About</a>
         <a href="board.html" class="header-items">Board</a>
         <a href="committees.html" class="header-items">Committees</a>
-        <u class="indicator"><a href="calendar.html" class="header-items">Calendar</a></u>
+        <a href="calendar.html" class="header-items curr-page">
+          Calendar
+          <span class="indicator"></span>
+        </a>
         <a href="http://127.0.0.1:8000/"><button id="button">Login</button></a>
       </div>
     </nav>
     <!-- END OF HEADER SECTION -->
 
     <!-- CALENDAR SECTION // EDIT THIS SECTION -->
+    <h1 class="title">SHPE 2023-2024 Calendar</h1>
+    <hr class="divider">
+    
     <div class="categories">
-      <div id="gm" class="category">General Meeting</div>
-      <div id="prof" class="category">Professional</div>
-      <div id="outreach" class="category">Outreach</div>
-      <div id="shpetinas" class="category">SHPEtinas</div>
-      <div id="fundraiser" class="category">Fundraiser</div>
+      <div id="gm" class="category">GM</div>
       <div id="social" class="category">Social</div>
+      <div id="shpetinas" class="category">SHPEtinas</div>
+      <div id="solar-boat" class="category">Solar Boat</div>
+      <div id="fundraiser" class="category">Fundraiser</div>
+      <div id="general" class="category">General</div>
     </div>
     <div class="outer" style="width: 80%;">
       <div id='calendar'></div>
     </div>
 
-    <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
-      Launch demo modal
-    </button> -->
-
-    <!-- Modal -->
-    <div class="modal fade" id="myModal" tabindex="-1" role="dialog">
-      <div class="modal-dialog modal-dialog-centered">
+    <script src="/js/calendar-body.js"></script>
+    
+    <div id="fullCalModal" class="modal fade" tabindex="-1" role="dialog">
+      <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
-            <h1 class="modal-title">Title</h1>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title"></h4>
           </div>
           <div class="modal-body">
-            <p>Date: </p>
-            <p>Time: </p>
-            <p>Location: </p>
-            <p>Description: </p>
+            <div class="event-date"></div>
+            <div class="event-time top-space"></div>
+            <div class="event-location top-space"></div>
+            <div class="event-description top-space"></div>
           </div>
-        </div>
-      </div>
-    </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
     <!-- END OF CALENDAR SECTION -->
 
     <!-- FOOTER SECTION // DO NOT CHANGE -->
     <footer class="contact-us">
-      <div class="top-footer">Society of Hispanic Professional Engineers &#183 2023-2024</div>
+      <div class="top-footer">SHPE at UCR &#183 2023-2024</div>
       <div class="bottom-footer">
         <a class="insta" href="https://www.instagram.com/shpeucr/" target="_blank">
           <img class="social-icons" src="/logos/instagram.png">
@@ -91,5 +103,6 @@
       </div>
     </footer>
     <!-- END OF FOOTER SECTION -->
+    <script src="/js/header.js"></script>
   </body>
 </html>

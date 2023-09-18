@@ -33,8 +33,10 @@
 
 .board-position {
   border-width: 2px;
-  border-color: gray;
+  border-color: black;
   border-style: solid;
+
+  box-shadow: 4px 4px black; 
 
   height: 550px;
   border-radius: 10px;
@@ -177,7 +179,7 @@
   transform: rotateY(-180deg);
 }
 
-@media (max-width: 500px) {
+@media screen and (min-width: 0px) and (max-width: 500px) {
   .board-body {
     grid-template-columns: 1fr;
   }
@@ -187,19 +189,19 @@
   }
 }
 
-@media (min-width: 501px) and (max-width: 751px) {
+@media screen and (min-width: 501px) and (max-width: 1139px) {
   .board-body {
     grid-template-columns: 1fr 1fr;
   }
 }
 
-@media (min-width: 751px) and (max-width: 999px) {
+@media screen and (min-width: 1140px) and (max-width: 1514px) {
   .board-body {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
 
-@media (min-width: 1000px) {
+@media screen and (min-width: 1515px) {
   .board-body {
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }

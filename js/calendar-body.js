@@ -17,52 +17,48 @@ document.addEventListener('DOMContentLoaded', function() {
       info.jsEvent.cancelBubble = true;
       info.jsEvent.preventDefault();
 
-      var myModal = new bootstrap.Modal('#myModal');
-
       var eventObj = info.event;
 
-      // var startDate = calendar.formatDate(eventObj.start, {
-      //   month: 'long',
-      //   year: 'numeric',
-      //   day: 'numeric',
-      //   weekday: 'long',
-      // });
+      var startDate = calendar.formatDate(eventObj.start, {
+        month: 'long',
+        year: 'numeric',
+        day: 'numeric',
+        weekday: 'long',
+      });
 
-      // var endDate = calendar.formatDate(eventObj.end, {
-      //   month: 'long',
-      //   year: 'numeric',
-      //   day: 'numeric',
-      //   weekday: 'long',
-      // });
+      var endDate = calendar.formatDate(eventObj.end, {
+        month: 'long',
+        year: 'numeric',
+        day: 'numeric',
+        weekday: 'long',
+      });
 
-      // var startTime = calendar.formatDate(eventObj.start, {
-      //   hour: 'numeric',
-      //   minute: 'numeric',
-      // });
+      var startTime = calendar.formatDate(eventObj.start, {
+        hour: 'numeric',
+        minute: 'numeric',
+      });
 
-      // var endTime = calendar.formatDate(eventObj.end, {
-      //   hour: 'numeric',
-      //   minute: 'numeric',
-      // });
+      var endTime = calendar.formatDate(eventObj.end, {
+        hour: 'numeric',
+        minute: 'numeric',
+      });
 
-      // $('.modal-title').html(eventObj.title);
-      myModal.show();
+      if (eventObj.allDay) {
+        $('.modal-title').html(eventObj.title);
+        $('.event-date').html('Date: ' + startDate + ' to ' + endDate);
+        $('.event-location').html('Location: ' + eventObj.extendedProps.location);
+        $('.event-description').html('Description: ' + eventObj.extendedProps.description);
+        $('#fullCalModal').modal();
+      }
+      else {
+        $('.modal-title').html(eventObj.title);
+        $('.event-date').html('Date: ' + startDate);
+        $('.event-time').html('Time: ' + startTime + ' to ' + endTime);
+        $('.event-location').html('Location: ' + eventObj.extendedProps.location);
+        $('.event-description').html('Description: ' + eventObj.extendedProps.description);
+        $('#fullCalModal').modal();
+      }
       
-      // if (eventObj.allDay) {
-      //   alert(
-      //     'Event: ' + eventObj.title +
-      //     '\n\nDate: ' + startDate + ' to ' + endDate +
-      //     '\n\nLocation: ' + eventObj.extendedProps.location +
-      //     '\n\nDescription: ' + eventObj.extendedProps.description);
-      // }
-      // else {
-      //   alert(
-      //     'Event: ' + eventObj.title +
-      //     '\n\nDate: ' + startDate +
-      //     '\n\nTime: ' + startTime + ' to ' + endTime +
-      //     '\n\nLocation: ' + eventObj.extendedProps.location +
-      //     '\n\nDescription: ' + eventObj.extendedProps.description);
-      // }
     },
 
     eventSources: [

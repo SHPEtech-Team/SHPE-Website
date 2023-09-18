@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset='utf-8' />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/index.global.min.js'></script>
+    <script src='/google-calendar/index.global.js'></script>
+
     <title>SHPE at UCR</title>
     <link rel="icon" href="/logos/regular shpe.png">
 
@@ -11,15 +16,26 @@
     <link rel="stylesheet" href="/styles/header.css">
     <link rel="stylesheet" href="/styles/home-body.css">
     <link rel="stylesheet" href="/styles/footer.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
   </head>
   <body>
     <!-- HEADER SECTION // DO NOT CHANGE -->
     <nav class="header">
       <a href="home.html" class="left-side">
-        <img class="logo" src="/logos/SHPE_logo_horiz_UC Riverside_CMYK.png">
+        <img id="long-logo" class="logo" src="/logos/SHPE_logo_horiz_UC Riverside_CMYK.png">
+        <img id="short-logo" class="logo" src="/logos/regular shpe.png">
       </a>
+      <div class="navbar_toggle" id="mobile-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
       <div class="right-side">
-        <u class="indicator"><a href="home.html" class="header-items">Home</a></u>
+        <a href="home.html" class="header-items curr-page">
+          Home
+          <span class="indicator"></span>
+        </a>
         <a href="about.html" class="header-items">About</a>
         <a href="board.html" class="header-items">Board</a>
         <a href="committees.html" class="header-items">Committees</a>
@@ -30,15 +46,91 @@
     <!-- END OF HEADER SECTION -->
 
     <!-- HOME SECTION // EDIT THIS SECTION -->
-    <main class="home-body">
-      <div class="group-photo">Group Photo</div>
-      <div class="announcements">Announcements</div>
-    </main>
+    <!-- <div class="ucr-container">
+      <img class="ucr-pic" src="/logos/ucr bell.jpg">
+      <div class="shpe-text">
+        <div class="shpe-name">Society of Hispanic Professional Engineers</div>
+        <div class="ucr-name">University of California, Riverside</div>
+      </div>
+    </div> -->
+    <div class="fixed-bg">
+      <div class="text-container">
+        <div class="animation-div" id="shpe-name">Society of Hispanic Professional Engineers</div>
+        <hr class="divid">
+        <div class="animation-div" id="ucr-name">University of California, Riverside</div>
+      </div>
+    </div>
+
+    <script>
+      window.onscroll = function() {
+        if ($(this).scrollTop() > 50) {
+          $('.animation-div').fadeOut("fast");
+          $('.divid').fadeOut("fast");
+        }
+        else {
+          $('.animation-div').fadeIn();
+          $('.divid').fadeIn();
+        }
+      }
+    </script>
+
+    <h3 class="welcome-text">Empowering Latinx in Engineering</h3>
+    <div class="welcome-container" style="margin-bottom: 150px;">
+      <img class="welcome-img" src="/logos/regular shpe.png">
+      <div class="wel">
+        <hr class="sep">
+        <div class="welcome-message">Welcome to SHPE at UCR! We are a student chapter for the Society of Hispanic Professional Engineers. We aim to empower Latinx individuals pursuing engineering careers through a diverse range of opportunities. 
+          Whether you're a student seeking guidance, a professional looking to give back, or simply someone interested in our cause, you've come to the right place. 
+          Explore our offerings and become part of the SHPE at UCR familia. Together, we'll make a meaningful impact in the world of engineering.</div>
+        <hr class="sep">
+      </div>
+    </div>
+
+    <h3 class="welcome-text">Want to support SHPE at UCR?</h3>
+    <div class="sponsor-container" style="margin-bottom: 150px;">
+      <hr class="sep">
+      <div class="welcome-message">Welcome to SHPE at UCR! We are a student chapter for the Society of Hispanic Professional Engineers. We aim to empower Latinx individuals pursuing engineering careers through a diverse range of opportunities. 
+        Whether you're a student seeking guidance, a professional looking to give back, or simply someone interested in our cause, you've come to the right place. 
+        Explore our offerings and become part of the SHPE at UCR familia. Together, we'll make a meaningful impact in the world of engineering.</div>
+      <hr class="sep">
+    </div>
+
+    <div class="about-container">
+      <div class="cal-title"><h2>Events This Week</h2></div>
+
+      <div class="outer" style="width: 60%;">
+        <div id='calendar'></div>
+      </div>
+
+      <script src="/js/home-body.js"></script>
+      
+      <div id="fullCalModal" class="modal fade" tabindex="-1" role="dialog">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title"></h4>
+            </div>
+            <div class="modal-body">
+              <div class="event-date"></div>
+              <div class="event-time top-space"></div>
+              <div class="event-location top-space"></div>
+              <div class="event-description top-space"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
     <!-- END OF HOME SECTION -->
+      
 
     <!-- FOOTER SECTION // DO NOT CHANGE -->
     <footer class="contact-us">
-      <div class="top-footer">Society of Hispanic Professional Engineers &#183 2023-2024</div>
+      <div class="top-footer">SHPE at UCR &#183 2023-2024</div>
       <div class="bottom-footer">
         <a class="insta" href="https://www.instagram.com/shpeucr/" target="_blank">
           <img class="social-icons" src="/logos/instagram.png">
@@ -55,5 +147,6 @@
       </div>
     </footer>
     <!-- END OF FOOTER SECTION -->
+    <script src="/js/header.js"></script>
   </body>
 </html>

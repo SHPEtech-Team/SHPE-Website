@@ -1,18 +1,18 @@
 .categories {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  column-gap: 20px;
+  row-gap: 5px;
 
   position: absolute;
-  top: 180px;
+  top: 255px;
 
   margin-left: 50%;
   transform: translate(-50%);
 }
 
 .category {
-  width: 130px;
+  width: 110%;
   padding-top: 2px;
   padding-bottom: 2px;
   margin-left: 5px;
@@ -21,17 +21,18 @@
   border-radius: 10px;
   background-color: black;
   text-align: center;
+  white-space: nowrap;
 }
 
 #gm {
   background-color: #D33A02;
 }
 
-#prof {
+#general {
   background-color: #001F5B;
 }
 
-#outreach {
+#solar-boat {
   background-color: #FD652F;
 }
 
@@ -53,13 +54,19 @@
 }
 
 #calendar {
-  margin-top: 130px;
+  margin-top: 30px;
   height: 100%;
 }
 
 .fc-toolbar-chunk {
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
+
+.fc-toolbar-title {
+  font-weight: 800;
+  color: black;
+}
+
 
 .fc-event-time {
   font-weight: lighter !important;
@@ -72,10 +79,36 @@
 
 .fc-daygrid-day-number {
   font-weight: 500;
+  text-decoration: none;
+  color: black;
 }
 
 .fc-button {
   background-color: #FD652F !important;
   border-radius: 15px !important;
   border: none !important;
+}
+
+.modal {
+  z-index: 9999;
+}
+
+.top-space {
+  margin-top: 10px;
+}
+
+.title {
+  margin-top: 130px;
+  text-align: center;
+  font-weight: bold;
+  color: black;
+  font-family: Roboto;
+}
+
+.divider {
+  margin-top: 10px;
+  border: 2px solid #fd652f;
+  opacity: 0.5;
+  width: 90%;
+  margin-left: 5%;
 }
