@@ -156,6 +156,21 @@
   width: 100%;
   font-size: 20px;
 }
+.sponsor-message {
+  margin-top: 20px;
+  text-align: center;
+  width: 100%;
+  font-size: 20px;
+}
+.info-message {
+  margin-top: 20px;
+  text-align: left;
+  color:white; 
+  width: 160%;
+  font-size: 20px;
+  margin-right: 20px;
+  margin-left: auto;
+}
 
 .sep {
   width: 30%;
@@ -178,4 +193,64 @@
   width: 40%;
   margin-left: 50%;
   transform: translate(-50%);
+}
+.info-container{
+  width: 40%;
+  margin-left: 40%;
+  transform: translate(-50%);
+}
+
+
+.box-container {
+  width: 100%;
+  max-width: 100%; 
+  height: 100vh; 
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center; 
+ 
+}
+       
+.box {
+  flex: 0 0 30%;
+  height: 60%;
+  margin: 0 20px;
+}
+.box:nth-child(1) {
+  background-color: #72a9be; 
+}
+
+.box:nth-child(2) {
+  background-color: #72a9be; 
+}
+
+.box:nth-child(3) {
+  background-color: #72a9be; 
+}
+
+.arrow-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* Style the arrow icon */
+.arrow {
+  width: 30px;
+  height: 30px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  transform: rotate(-45deg);
+  cursor: pointer;
+}
+
+/* Add hover effect to the arrow */
+.arrow:hover {
+  border: solid #FD652F;
+}
+
+/* Style the link text */
+.link-text {
+  margin-left: 10px;
+  font-size: 18px;
+  cursor: pointer;
 }
