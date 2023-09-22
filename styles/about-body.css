@@ -70,13 +70,27 @@
   margin-bottom: 40px;
 }
 
+.history-img {
+  width: 400px;
+  height: 300px;
+
+  object-fit: cover;
+
+  border-radius: 10px;
+}
+
+#advisor {
+  object-position: 0px 5%;
+}
+
 .about-title {
   margin-left: 15%;
 }
 
 .description {
-  width: 500px;
+  width: 100%;
   margin-top: 10px;
+  font-size: 1vw !important;
 }
 
 .right-image {
