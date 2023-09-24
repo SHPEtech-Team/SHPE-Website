@@ -1,0 +1,12 @@
+
+.flier {
+  width: 50vw;
+  margin-left: 50%;
+  transform: translate(-50%);
+
+  border-radius: 15px;
+}
+
+#top {
+  margin-top: 130px;
+}
