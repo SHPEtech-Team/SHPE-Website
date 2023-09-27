@@ -18,12 +18,13 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 200px
+  width: 200px;
 }
 
 .shpe-logo {
   height: 30px;
-  padding-left: 10px;
+  padding-top: 10px;
+  left: 5%;
   cursor: pointer;
 }
 
@@ -31,6 +32,25 @@
   height: 31px;
   opacity: 0.75;
   transition: all 0.15s ease;
+}
+
+.right-side {
+  display: flex;
+  flex: 0.1;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 35px;
+  flex-direction: row;
+}
+
+.logout {
+  text-decoration: none;
+  color: #0070C0;
+}
+
+.logout:hover {
+  opacity: 0.5;
+  transition: ease-in-out 0.3s;
 }
 
 body {

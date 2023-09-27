@@ -6,11 +6,16 @@
     <title>SHPE Sign In</title>
     {% load static %}
     <link rel="icon" href="{% static 'img/regular shpe.png' %}">
+    <link rel="stylesheet" href="{% static 'logout-body.css' %}">
     <link rel="stylesheet" href="{% static 'login-body.css' %}">
     <link rel="stylesheet" href="{% static 'login-header.css' %}">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,700&display=swap" rel="stylesheet">
+
+    {% load bootstrap5 %}
+    {% bootstrap_css %}
+    {% bootstrap_javascript %}
   </head>
   <body>
     {% load socialaccount %}
@@ -21,37 +26,36 @@
         </a>
         <div class="right-side">
           <div class="intro">hello, {{user.username}}</div>
-          <a href="logout">Logout</a>
+          <a class="logout" href="logout">logout</a>
         </div>
       </nav>
 
-      <div class="event-reg">
-        <div id="ff-compose"></div>
-        <script async defer src="https://formfacade.com/include/107923411045121755614/form/1FAIpQLSdSwp80_orhpZWKX3i2zd10d_mIIIEGg3C3MjdQ46S0vDJsFg/classic.js?div=ff-compose"></script>
+      <h3 style="margin-top: 135px; text-align: center;">Event Check-In</h3>
+
+      <div style="margin-top: 25px; width: 50%; margin-left: 50%; transform: translate(-50%);">
+        <div class="input-group mb-3">
+          <input type="text" class="form-control" placeholder="Event Secret Code" aria-label="Recipient's username" aria-describedby="button-addon2">
+          <button class="btn btn-outline-secondary" type="button" id="button-addon2">Submit</button>
+        </div>
       </div>
 
-      <div class="slides-container">
+      <div class="slides-container" style="margin-top: 300px;">
         <h2 class="gm-header">Fall 2023 GM Slides</h2>
         <h3 class="gm">GM 1</h3>
         <iframe class="slides" src="https://docs.google.com/presentation/d/e/2PACX-1vTPUewxW7ngoG2j1pUL6Sbuqtx03_JM7oxGw36bdZAWdcz2AfKsZ_kaxDAWxEGmyw/embed?start=false&loop=true&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
       </div>
 
     {% else %}
-      <nav class="header">
-        <a class="left-side" href="http://127.0.0.1:5500/pages/home.html">
-          <img class="shpe-logo" src="{% static 'img/SHPE_logo_horiz_UC Riverside_CMYK.png' %}">
-        </a>
-      </nav>
+      <div class="test"></div>
+      <div class="shpe-logo"><img src="{% static 'img/white-shpe.png' %}"></div>
 
-      <div class="login-page">
-        <div class="login-title">Log in</div>
-        <div class="description">
-          Sign in using your UCR email
-        </div>
-        <a href="{% provider_login_url 'google' %}?next=/" class="google-button">
-          <img src="{% static 'img/google-sign-in.png' %}">
-        </a>
+      <div class="description">
+        Log in with your UCR email!
       </div>
+
+      <a href="{% provider_login_url 'google' %}?next=/" class="google-button">
+        <img src="{% static 'img/white-google.png' %}">
+      </a>
     {% endif %}
 
     <div>
