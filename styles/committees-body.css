@@ -2,14 +2,16 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  background-color: #72A9BE;
   align-items: center;
   margin-top: 120px;
-  margin-left: auto;
-  margin-right: auto;
-  border-width: 5px;
-  border-color: #011130;
-  border-style:inset;
+  margin-left: 51.5%;
+  transform: translate(-50%);
+  margin-bottom: 50px;
+
+  border-style: solid;
+  border-radius: 15px;
+  box-shadow: 3px 3px 3px #001f5b;
+
   width: 80%;
   height: 50px;
   padding-left: 30px;
@@ -21,25 +23,25 @@
   cursor: pointer;
   color: white;
   text-decoration: none;
-  text-shadow: 1px 1px 2px rgb(98, 99, 102), 0 0 25px rgb(114, 170, 190), 0 0 5px rgb(98, 99, 102);
+  /* text-shadow: 1px 1px 2px rgb(98, 99, 102), 0 0 25px rgb(114, 170, 190), 0 0 5px rgb(98, 99, 102); */
 }
 
 .committees:hover {
-  color: #f1c40f;
+  color: #FD652F;
 }
 
 .committees.active {
-  color: #f39c12;
-}
-
-.committees i {
-  margin-right: 5px;
+  color: #FD652F;
 }
 
 .committee {
   position: relative;
   display: inline-box;
   margin: 20px;
+  margin-bottom: 150px;
+  width: 80%;
+  left: 50%;
+  transform: translate(-50%);
 }
 
 .committee-border {
@@ -47,10 +49,11 @@
   border-color: #001F5B;
   border-style: solid;
   height: 400px;
+  width: 100%;
   margin-top: 20px;
   margin-bottom: 20px;
-  margin-left: 200px;
-  margin-right: 200px;
+  /* margin-left: 200px;
+  margin-right: 200px; */
   position: relative;
   overflow: hidden;
 }
