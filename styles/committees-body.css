@@ -1,10 +1,23 @@
+.title {
+  margin-top: 130px;
+  text-align: center;
+  font-size: 50px;
+}
+
+.divider {
+  margin-top: 10px;
+  border: 2px solid #fd652f;
+  opacity: 0.5;
+  width: 90%;
+  margin-left: 5%;
+}
+
 .nav-bar {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  margin-top: 120px;
-  margin-left: 51.5%;
+  margin-top: 50px;
+  margin-left: 51%;
   transform: translate(-50%);
   margin-bottom: 50px;
 
@@ -40,6 +53,7 @@
   margin: 20px;
   margin-bottom: 150px;
   width: 80%;
+  min-width: 700px;
   left: 50%;
   transform: translate(-50%);
 }
@@ -115,17 +129,25 @@
 
 .shpe-body-orange {
   font-family: 'Pathway Gothic One', Arial;
-  font-size:30px;
+  font-size: 2vw;
   color: #D33A02;
 }
 
 .shpe-body-blue {
   font-family: 'Pathway Gothic One', Arial;
-  font-size:30px;
+  font-size: 2vw;
   color: #001F5B;
 }
 
 .shpe-header {
   font-family: 'Pathway Gothic One', Arial;
   font-size:50px;
+}
+
+@media screen and (max-width: 1150px) {
+  .nav-bar {
+    opacity: 0;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
 }

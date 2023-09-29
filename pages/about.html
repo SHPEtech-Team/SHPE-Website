@@ -36,7 +36,7 @@
         <a href="board.html" class="header-items">Board</a>
         <a href="committees.html" class="header-items">Committees</a>
         <a href="calendar.html" class="header-items">Calendar</a>
-        <a href="http://127.0.0.1:8000/"><button id="button">Login</button></a>
+        <a href="login.html" target="_blank"><button id="button">Login</button></a>
       </div>
     </nav>
     <!-- END OF HEADER SECTION -->
@@ -50,11 +50,11 @@
     <hr class="divider">
 
     <div class="about-body" id="top-page">
-      <div class="flex-container">
+      <div class="flex-container" id="mission">
         <h2 id="about-body-header">Mission Statement</h2>
         <p id="about-body-p">SHPE changes lives by empowering the Hispanic community to realize its fullest potential and to impact the world through STEM awareness, access, support, and development.</p>
       </div>
-      <div class="flex-container">
+      <div class="flex-container" id="vision">
         <h2 id="about-body-header">Vision Statement</h2>
         <p id="about-body-p">SHPE’s vision is a world where Hispanics are highly valued and influential as the leading innovators, scientists, mathematicians, and engineers.</p> 
       </div>
@@ -96,31 +96,6 @@
         </button>
       </div>
     </div>
-    
-    <!-- <div class="slider-container">
-      <div class="slider-wrapper" >
-        <button class="slider-button next" data-next>&#10148;</button>
-        <button class="slider-button prev" data-prev>&#10148;</button>
-        <div class="slider" data-slider>
-          <div class="slider-slide" data-slide>
-            <img  src="/board pics/claudia.png" alt="Image">
-          </div>
-          <div class="slider-slide" data-slide>
-            <img  src="/board pics/jayan.jpg" alt="Image"/>
-          </div>
-          <div class="slider-slide" data-slide>
-            <img  src="/board pics/ricardo.JPG" alt="Image"/>
-          </div>
-          <div class="slider-slide" data-slide>
-            <img  src="/board pics/lina.jpg" alt="Image"/>
-          </div>
-          <div class="slider-slide" data-slide>
-            <img src="/board pics/kevin.JPG" alt="Image"/>
-          </div>
-        </div>
-      </div>
-    </div> -->
-    <!-- <script src="/js/about-page-slider.js"></script> -->
 
     <div class="flex-container">
       <h2 id="about-body-header" class="about-title">History</h2>
@@ -140,8 +115,8 @@
     
     <div class="horizontal-container">
       <div class="flex-container">
-        <h3>Advisor</h3>
-        <p class="description" id="about-body-p">Carlos is the Associate Director, Programming and Special Initiatives for California MESA Program, and the Director of the MESA programs at the Bourns College of Engineering at UC Riverside. Carlos is a former engineer, public school educator and has been an instructor and adjunct faculty in university classrooms. His responsibilities include program management and administration, curriculum development, teacher preparation and training, and the creation and implementation of student engineering challenges.</p>
+        <h3 id="second">Advisor</h3>
+        <p class="description second" id="about-body-p">Carlos is the Associate Director, Programming and Special Initiatives for California MESA Program, and the Director of the MESA programs at the Bourns College of Engineering at UC Riverside. Carlos is a former engineer, public school educator and has been an instructor and adjunct faculty in university classrooms. His responsibilities include program management and administration, curriculum development, teacher preparation and training, and the creation and implementation of student engineering challenges.</p>
         <p class="description" id="about-body-p">As a MESA alumni (at both the Pre-College and University level), first generation college student and a proud Latino (from the land of eternal spring, Guatemala), he has a passion for empowering, inspiring and preparing young people and their educators for achievement and success.</p>
       </div>
       <img class="history-img" id="advisor" src="/logos/about pics/carlos-mesa.jpg">
@@ -225,13 +200,13 @@
             <div class="accordion-body">
               <h6 class="initiative-title">Solar Boat</h6>
               <div class="vert-description">
-                <div>Solar Boat is a technical project that SHPE at UCR has been working on since 2019. The solar boat team is developing a solar-powered boat to compete in the California Solar Regatta. Find more information here.</div>
+                <div>Solar Boat is a technical project that SHPE at UCR has been working on since 2019. The solar boat team is developing a solar-powered boat to compete in the California Solar Regatta. Find more information <a href="/pages/committees.html">here</a>.</div>
                 <img class="initiative-image" src="/logos/about pics/solar-boat.jpg">
               </div>
               <hr>
               <h6 class="initiative-title">SHPE Tech Team</h6>
               <div id="reverse" class="vert-description">
-                <div>The SHPE Tech Team is a committee that focuses on technical projects pertaining to software engineering. The last project that the tech team worked on was this website! There will be a lot of opportunities to gain technical experience this year, so make sure to check out more information here.</div>
+                <div>The SHPE Tech Team is a committee that focuses on technical projects pertaining to software engineering. The last project that the tech team worked on was this website! There will be a lot of opportunities to gain technical experience this year, so make sure to check out more information <a href="committees.html">here</a>.</div>
                 <img class="initiative-image" src="/logos/about pics/tech-team.JPG">
               </div>
               <hr>
@@ -283,7 +258,7 @@
             <div class="accordion-body">
               <h6 class="initiative-title">MentorSHPE</h6>
               <div class="vert-description">
-                <div>Our MentorSHPE program allows students to empower each other. Whether students are a mentee or mentor, students will gain leadership experience. Check out more information on how to join the program here.</div>
+                <div>Our MentorSHPE program allows students to empower each other. Whether students are a mentee or mentor, students will gain leadership experience. Check out more information on how to join the program <a href="committees.html">here</a>.</div>
                 <img class="initiative-image" src="/logos/about pics/mentorshpe.JPG">
               </div>
               <hr>
@@ -308,19 +283,26 @@
     <!-- FOOTER SECTION // DO NOT CHANGE -->
     <footer class="contact-us">
       <div class="top-footer">SHPE at UCR &#183 2023-2024</div>
-      <div class="bottom-footer">
-        <a class="insta" href="https://www.instagram.com/shpeucr/" target="_blank">
+      <div class="middle-footer">
+        <a class="socials" href="https://www.instagram.com/shpeucr/" target="_blank">
           <img class="social-icons" src="/logos/instagram.png">
           <div class="tooltip">Instagram</div>
         </a>
-        <a class="discord" href="https://discord.gg/Bw9GvphJT" target="_blank">
+        <a class="socials" href="https://discord.gg/CwkV9ZpjY" target="_blank">
           <img class="social-icons" src="/logos/discord.png">
           <div class="tooltip">Discord</div>
         </a>
-        <a class="linkedin" href="https://www.linkedin.com/in/shpe-at-ucr-99051a75/" target="_blank">
+        <a class="socials" href="https://www.linkedin.com/in/shpe-at-ucr-99051a75/" target="_blank">
           <img class="social-icons" src="/logos/linkedin.png">
           <div class="tooltip">LinkedIn</div>
         </a>
+        <a class="socials" href="https://shpe.org/" target="_blank">
+          <img class="social-icons" src="/logos/black-logo.png">
+          <div class="tooltip">SHPE National Website</div>
+        </a>
+      </div>
+      <div class="bottom-footer">
+        If you encounter any bugs/issues, please report them <a href="https://forms.gle/ZQGoMMWmYEj1DLG19" target="_blank" style="margin-left: 5px; color: black; text-decoration: underline; cursor: pointer;">here</a>
       </div>
     </footer>
     <!-- END OF FOOTER SECTION --> 

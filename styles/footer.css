@@ -7,12 +7,13 @@
 .contact-us {
   background-color: #626366;
   color: white;
-  height: 150px;
+  height: 250px;
   margin-top: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  row-gap: 30px;
 }
 
 .top-footer {
@@ -23,10 +24,19 @@
   margin-bottom: 10px;
 }
 
-.bottom-footer {
+.middle-footer {
   display: flex;
   flex-direction: row;
   justify-content: center;
+}
+
+.bottom-footer {
+  display: flex;
+  justify-content: center;
+  color: black;
+  font-size: 20px;
+  margin-bottom: 10px;
+  margin-top: 20px;
 }
 
 .social-icons {
@@ -35,13 +45,11 @@
   margin-right: 30px;
 }
 
-.insta, .discord, .linkedin {
+.socials {
   position: relative;
 }
-
-.insta .tooltip,
-.discord .tooltip, 
-.linkedin .tooltip {
+ 
+.socials .tooltip {
   position: absolute;
   background-color: gray;
   color: white;
@@ -59,9 +67,7 @@
   white-space: nowrap;
 }
 
-.insta:hover .tooltip,
-.discord:hover .tooltip,
-.linkedin:hover .tooltip {
+.socials:hover .tooltip {
   transition: ease-in 0.5s;
   opacity: 1;
 }

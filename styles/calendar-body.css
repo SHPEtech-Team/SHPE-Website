@@ -112,3 +112,10 @@
   width: 90%;
   margin-left: 5%;
 }
+
+
+@media screen and (max-width: 709px) {
+  .categories {
+    opacity: 0;
+  }
+}

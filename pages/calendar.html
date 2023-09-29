@@ -40,7 +40,7 @@
           Calendar
           <span class="indicator"></span>
         </a>
-        <a href="http://127.0.0.1:8000/"><button id="button">Login</button></a>
+        <a href="login.html" target="_blank"><button id="button">Login</button></a>
       </div>
     </nav>
     <!-- END OF HEADER SECTION -->
@@ -63,22 +63,22 @@
 
     <script src="/js/calendar-body.js"></script>
     
-    <div id="fullCalModal" class="modal fade" tabindex="-1" role="dialog">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            <h4 class="modal-title"></h4>
-          </div>
-          <div class="modal-body">
-            <div class="event-date"></div>
-            <div class="event-time top-space"></div>
-            <div class="event-location top-space"></div>
-            <div class="event-description top-space"></div>
-          </div>
-        </div><!-- /.modal-content -->
-      </div><!-- /.modal-dialog -->
-    </div><!-- /.modal -->
+      <div id="fullCalModal" class="modal fade" tabindex="-1" role="dialog">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title"></h4>
+            </div>
+            <div class="modal-body">
+              <div class="event-date"></div>
+              <div class="event-time top-space"></div>
+              <div class="event-location top-space"></div>
+              <div class="event-description top-space"></div>
+            </div>
+          </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+      </div><!-- /.modal -->
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
@@ -87,19 +87,26 @@
     <!-- FOOTER SECTION // DO NOT CHANGE -->
     <footer class="contact-us">
       <div class="top-footer">SHPE at UCR &#183 2023-2024</div>
-      <div class="bottom-footer">
-        <a class="insta" href="https://www.instagram.com/shpeucr/" target="_blank">
+      <div class="middle-footer">
+        <a class="socials" href="https://www.instagram.com/shpeucr/" target="_blank">
           <img class="social-icons" src="/logos/instagram.png">
           <div class="tooltip">Instagram</div>
         </a>
-        <a class="discord" href="https://discord.gg/Bw9GvphJT" target="_blank">
+        <a class="socials" href="https://discord.gg/CwkV9ZpjY" target="_blank">
           <img class="social-icons" src="/logos/discord.png">
           <div class="tooltip">Discord</div>
         </a>
-        <a class="linkedin" href="https://www.linkedin.com/in/shpe-at-ucr-99051a75/" target="_blank">
+        <a class="socials" href="https://www.linkedin.com/in/shpe-at-ucr-99051a75/" target="_blank">
           <img class="social-icons" src="/logos/linkedin.png">
           <div class="tooltip">LinkedIn</div>
         </a>
+        <a class="socials" href="https://shpe.org/" target="_blank">
+          <img class="social-icons" src="/logos/black-logo.png">
+          <div class="tooltip">SHPE National Website</div>
+        </a>
+      </div>
+      <div class="bottom-footer">
+        If you encounter any bugs/issues, please report them <a href="https://forms.gle/ZQGoMMWmYEj1DLG19" target="_blank" style="margin-left: 5px; color: black; text-decoration: underline; cursor: pointer;">here</a>
       </div>
     </footer>
     <!-- END OF FOOTER SECTION -->

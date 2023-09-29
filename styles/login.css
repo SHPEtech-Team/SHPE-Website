@@ -1,0 +1,11 @@
+
+img {
+  margin-left: 50%;
+  margin-top: 10%;
+  transform: translate(-50%);
+  height: 300px;
+}
+
+h2 {
+  text-align: center;
+}

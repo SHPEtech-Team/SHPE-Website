@@ -58,7 +58,7 @@
   to {left: 50%; transform: translate(-50%);}
 }
 
-@media screen and (max-width: 559px) {
+@media screen and (min-width: 0px) and (max-width: 559px) {
   #shpe-name {
     font-size: 150%;
   }
@@ -68,7 +68,7 @@
   }
 
   .divid {
-    top: 44%;
+    opacity: 0;
   }
 }
 
@@ -137,6 +137,7 @@
 
 .welcome-text {
   font-size: 40px;
+  text-align: center;
   align-items: center;
   justify-content: center;
   display: flex;
@@ -178,4 +179,20 @@
   width: 40%;
   margin-left: 50%;
   transform: translate(-50%);
+}
+
+@media screen and (max-width: 1200px) {
+  .welcome-container {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .welcome-img {
+    margin-right: 0px;
+    height: 30vw;
+  }
+
+  /* .divid {
+    opacity: 0;
+  } */
 }
