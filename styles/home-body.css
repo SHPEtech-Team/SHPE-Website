@@ -87,8 +87,8 @@
 }
 
 .outer {
-  margin-left: 50%;
-  transform: translate(-50%);
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .cal-title {
@@ -162,8 +162,8 @@
   width: 30%;
   height: 2px;
   background-color: #FD652F;
-  margin-left: 50%;
-  transform: translate(-50%);
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .welcome-container {
@@ -171,14 +171,15 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  margin-left: 50%;
-  transform: translate(-50%);
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
 }
 
 .sponsor-container {
   width: 40%;
-  margin-left: 50%;
-  transform: translate(-50%);
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @media screen and (max-width: 1200px) {
