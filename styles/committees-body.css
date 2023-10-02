@@ -105,7 +105,7 @@
   padding: 10px;
 }
 
-.logo-overlay {
+.logos-overlay {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -123,7 +123,7 @@
   opacity: 0.35; /*controls opacity of the background image */
 }
 
-.committee-border:hover .logo-overlay {
+.committee-border:hover .logos-overlay {
   left: 26%;
 }
 
