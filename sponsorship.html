@@ -6,16 +6,16 @@
     <script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/index.global.min.js'></script>
     <script src='/google-calendar/index.global.js'></script>
 
-    <title>Calendar</title>
+    <title>SHPE at UCR</title>
     <link rel="icon" href="/logos/regular shpe.png">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,700&display=swap" rel="stylesheet">
-    
-    <link rel="stylesheet" href="/styles/header.css">
-    <link rel="stylesheet" href="/styles/calendar-body.css">
-    <link rel="stylesheet" href="/styles/footer.css">
+
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/sponsorship-body.css">
+    <link rel="stylesheet" href="styles/footer.css">
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
   </head>
@@ -32,57 +32,24 @@
         <span class="bar"></span>
       </div>
       <div class="right-side">
-        <a href="home.html" class="header-items">Home</a>
+        <a href="home.html" class="header-items curr-page">
+          Home
+          <span class="indicator"></span>
+        </a>
         <a href="about.html" class="header-items">About</a>
         <a href="board.html" class="header-items">Board</a>
         <a href="committees.html" class="header-items">Committees</a>
-        <a href="calendar.html" class="header-items curr-page">
-          Calendar
-          <span class="indicator"></span>
-        </a>
-        <a href="login.html" target="_blank"><button id="button">Login</button></a>
+        <a href="calendar.html" class="header-items">Calendar</a>
+        <a href="http://127.0.0.1:8000/"><button id="button">Login</button></a>
       </div>
     </nav>
     <!-- END OF HEADER SECTION -->
-
-    <!-- CALENDAR SECTION // EDIT THIS SECTION -->
-    <h1 class="title">SHPE 2023-2024 Calendar</h1>
+    <h1 class="title">How to Support SHPE at UCR</h1>
     <hr class="divider">
-    
-    <div class="categories">
-      <div id="gm" class="category">GM</div>
-      <div id="social" class="category">Social</div>
-      <div id="shpetinas" class="category">SHPEtinas</div>
-      <div id="solar-boat" class="category">Solar Boat</div>
-      <div id="fundraiser" class="category">Fundraiser</div>
-      <div id="general" class="category">General</div>
-    </div>
-    <div class="outer" style="width: 80%;">
-      <div id='calendar'></div>
-    </div>
 
-    <script src="/js/calendar-body.js"></script>
-    
-      <div id="fullCalModal" class="modal fade" tabindex="-1" role="dialog">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-              <h4 class="modal-title"></h4>
-            </div>
-            <div class="modal-body">
-              <div class="event-date"></div>
-              <div class="event-time top-space"></div>
-              <div class="event-location top-space"></div>
-              <div class="event-description top-space"></div>
-            </div>
-          </div><!-- /.modal-content -->
-        </div><!-- /.modal-dialog -->
-      </div><!-- /.modal -->
-    
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-    <!-- END OF CALENDAR SECTION -->
+    <img class="flier" id="top" src="/logos/front-sponsorship.jpg">
+    <img class="flier" src="/logos/back-sponsorship.jpg" style="margin-top: 20px;">
+    <!-- END OF HOME SECTION -->  
 
     <!-- FOOTER SECTION // DO NOT CHANGE -->
     <footer class="contact-us">
@@ -110,6 +77,6 @@
       </div>
     </footer>
     <!-- END OF FOOTER SECTION -->
-    <script src="/js/header.js"></script>
+    <script src="js/header.js"></script>
   </body>
 </html>
