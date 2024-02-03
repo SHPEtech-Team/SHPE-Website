@@ -17,8 +17,8 @@
   justify-content: space-between;
   align-items: center;
   margin-top: 50px;
-  margin-left: 51%;
-  transform: translate(-50%);
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 50px;
 
   border-style: solid;
@@ -50,12 +50,11 @@
 .committee {
   position: relative;
   display: inline-box;
-  margin: 20px;
   margin-bottom: 150px;
   width: 80%;
   min-width: 700px;
-  left: 50%;
-  transform: translate(-50%);
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .committee-border {
@@ -105,7 +104,7 @@
   padding: 10px;
 }
 
-.logo-overlay {
+.logos-overlay {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -123,7 +122,7 @@
   opacity: 0.35; /*controls opacity of the background image */
 }
 
-.committee-border:hover .logo-overlay {
+.committee-border:hover .logos-overlay {
   left: 26%;
 }
 
