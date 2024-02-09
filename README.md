@@ -1,4 +1,4 @@
-# SHPE Web Development
+# [SHPE Website](https://shpeucr.org/)
  
  > Leads: [Johan Gonzalez](https://github.com/jxgonz)\, 
  > [Ruby Franco Martinez](https://github.com/Ruby-Franco)\, 
